@@ -1,0 +1,8 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:3dln/nodejs-template.git",
+  "author": "Ashkan Ashtiani <ashkan.ashtiani@gmail.com>",
+  "license": "MIT"
+}
