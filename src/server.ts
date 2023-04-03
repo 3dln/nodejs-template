@@ -15,7 +15,7 @@ app.use(morgan('tiny'));
 
 // Routes
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello World!');
+    res.json({message: 'Hello World!'});
 });
 
 // Error handler
