@@ -10,7 +10,6 @@ RUN yarn
 # Copy source
 COPY src ./src
 COPY tsconfig.json ./tsconfig.json
-COPY openapi.json ./openapi.json
 
 # Build dist
 RUN yarn build
@@ -27,4 +26,4 @@ COPY src/public dist/src/public
 
 # Expose port 8000
 EXPOSE 8000
-CMD ["dist/src/server.js"]
+CMD ["node", "dist/src/server.js"]
