@@ -23,4 +23,4 @@ COPY --from=base /dist /dist
 
 # Expose port 8000
 EXPOSE 8000
-CMD ["node", "dist/src/server.js"]
+CMD ["dist/server.js"]
