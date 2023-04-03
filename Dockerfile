@@ -21,9 +21,6 @@ FROM gcr.io/distroless/nodejs:18
 COPY --from=base ./node_modules ./node_modules
 COPY --from=base /dist /dist
 
-# Copy static files
-COPY src/public dist/src/public
-
 # Expose port 8000
 EXPOSE 8000
 CMD ["node", "dist/src/server.js"]
